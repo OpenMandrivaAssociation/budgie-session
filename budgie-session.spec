@@ -1,5 +1,4 @@
-%define po_package gnome-session-45
-
+%define po_package budgie-session-0
 %define _disable_rebuild_configure 1
 
 Summary:	Budgie Session is a softish fork of gnome-session, designed to provide a stable session manager for Budgie 10.x
@@ -62,6 +61,19 @@ Budgie Session is a softish fork of gnome-session, designed to provide a stable 
 
 %install
 %meson_install
-#find_lang %{po_package}
+%find_lang %{po_package}
 
-%files
+%files -f %{po_package}.lang
+%{_bindir}/budgie-session
+%{_bindir}/budgie-session-inhibit
+%{_bindir}/budgie-session-quit
+%{_libexecdir}/budgie-session-binary
+%{_libexecdir}/budgie-session-check-accelerated
+%{_libexecdir}/budgie-session-check-accelerated-gl-helper
+%{_libexecdir}/budgie-session-check-accelerated-gles-helper
+%{_libexecdir}/budgie-session-failed
+%{_datadir}/budgie-session/hardware-compatibility
+%{_datadir}/glib-2.0/schemas/org.buddiesofbudgie.SessionManager.gschema.xml
+%{_mandrir}/man1/budgie-session-inhibit.1.zst
+%{_mandrir}/man1/budgie-session-quit.1.zst
+%{_mandrir}/man1/budgie-session.1.zst
