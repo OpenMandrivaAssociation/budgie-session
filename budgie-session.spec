@@ -52,7 +52,7 @@ Requires:   x11-server-xwayland
 Budgie Session is a softish fork of gnome-session, designed to provide a stable session manager for Budgie 10.x
 
 %prep
-%autosetup -n %{name}-v%{version} -p1
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %meson                     \
