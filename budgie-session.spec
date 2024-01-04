@@ -74,6 +74,6 @@ Budgie Session is a softish fork of gnome-session, designed to provide a stable 
 %{_libexecdir}/budgie-session-failed
 %{_datadir}/budgie-session/hardware-compatibility
 %{_datadir}/glib-2.0/schemas/org.buddiesofbudgie.SessionManager.gschema.xml
-%{_mandir}/man1/budgie-session-inhibit.1.zst
-%{_mandir}/man1/budgie-session-quit.1.zst
-%{_mandir}/man1/budgie-session.1.zst
+%{_mandir}/man1/budgie-session-inhibit.1.*
+%{_mandir}/man1/budgie-session-quit.1.*
+%{_mandir}/man1/budgie-session.1.*
