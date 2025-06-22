@@ -4,7 +4,7 @@
 Summary:	Budgie Session is a softish fork of gnome-session, designed to provide a stable session manager for Budgie 10.x
 Name:		budgie-session
 Version:	0.9.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/Budgie
 Url:		https://github.com/BuddiesOfBudgie/budgie-session/
