@@ -61,9 +61,10 @@ Budgie Session is a softish fork of gnome-session, designed to provide a stable 
 
 %install
 %meson_install
-%find_lang %{po_package}
+#find_lang %{po_package}
 
-%files -f %{po_package}.lang
+%files 
+#-f %{po_package}.lang
 %{_bindir}/budgie-session
 %{_bindir}/budgie-session-inhibit
 %{_bindir}/budgie-session-quit
